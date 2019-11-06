@@ -115,8 +115,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-CELERY_BROKER_URL = 'amqp://rakib:123456@localhost:5672/rakibhost'
-CELERY_RESULT_BACKEND = 'amqp://rakib:123456@localhost:5672/rakibhost'
+CELERY_BROKER_URL = 'amqp://jimmy:jimmy123@localhost/jimmy_vhost'
+CELERY_RESULT_BACKEND = 'amqp://jimmy:jimmy123@localhost/jimmy_vhost'
 CELERY_ACCEPT_CONTENT = ['json']
 CELERY_TASK_SERIALIZER = 'json'
 CELERY_RESULT_SERIALIZER = 'json'
